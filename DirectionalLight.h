@@ -1,5 +1,7 @@
 #pragma once
+
 #include "LightInterface.h"
+
 class DirectionalLight: public LightInterface {
 private:
 	vec3 direction;
