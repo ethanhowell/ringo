@@ -1,7 +1,7 @@
 #include <exception>
 #include <iostream>
 
-#include "FileScene.h"
+#include "JsonScene.h"
 #include "Ringo.h"
 #include "SceneInterface.h"
 
@@ -18,7 +18,7 @@ int main(int argc, char* argv[]) {
  
     try {
         Ringo ray_tracer = Ringo();
-        SceneInterface scene = FileScene(argv[1]);
+        SceneInterface scene = JsonScene(argv[1]);
         Image image = ray_tracer.render(scene);
         image.write("");
     }

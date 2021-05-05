@@ -1,0 +1,21 @@
+{
+  "camera": {
+    "look_at": [ 0, 0, 0 ],
+    "look_from": [ 3, 2, 3 ],
+    "look_up": [ 0, 1, 0 ],
+    "field_of_view": 28.0
+  },
+  "ambient_light": [ 0.1, 0.1, 0.1 ],
+  "lights": [
+    {
+      "type": "directional",
+      "direction": [ 2, 4, 1 ],
+      "color": [ 1, 1, 1 ]
+    }
+  ],
+  "objects": [
+    {
+
+    }
+  ]
+}

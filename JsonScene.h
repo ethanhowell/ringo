@@ -4,8 +4,8 @@
 
 #include "SceneInterface.h"
 
-class FileScene: public SceneInterface {
+class JsonScene: public SceneInterface {
 public:
-	FileScene(char* filename);
+	JsonScene(char* filename);
 };
 
