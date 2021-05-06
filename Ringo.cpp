@@ -1,6 +1,5 @@
 #include "Ringo.h"
 
-Image Ringo::render(SceneInterface scene)
-{
-    return Image();
+void Ringo::render(SceneInterface* scene) {
+    
 }

@@ -21,9 +21,6 @@
     <ClCompile Include="Ringo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Image.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="JsonScene.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -33,15 +30,15 @@
     <ClCompile Include="Triangle.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="FileRenderManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SceneInterface.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Ringo.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Image.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="JsonScene.h">
@@ -60,6 +57,15 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="vec3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IRenderManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Pixel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FileRenderManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

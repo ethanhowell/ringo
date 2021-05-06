@@ -140,8 +140,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="FileRenderManager.cpp" />
     <ClCompile Include="JsonScene.cpp" />
-    <ClCompile Include="Image.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Ringo.cpp" />
     <ClCompile Include="Triangle.cpp" />
@@ -149,9 +149,11 @@
   <ItemGroup>
     <ClInclude Include="Camera.h" />
     <ClInclude Include="DirectionalLight.h" />
+    <ClInclude Include="FileRenderManager.h" />
+    <ClInclude Include="IRenderManager.h" />
     <ClInclude Include="JsonScene.h" />
-    <ClInclude Include="Image.h" />
     <ClInclude Include="LightInterface.h" />
+    <ClInclude Include="Pixel.h" />
     <ClInclude Include="Ringo.h" />
     <ClInclude Include="SceneInterface.h" />
     <ClInclude Include="Triangle.h" />

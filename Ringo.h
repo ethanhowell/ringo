@@ -2,11 +2,16 @@
 
 #include <vector>
 
-#include "Image.h"
+#include "IRenderManager.h"
 #include "SceneInterface.h"
 
 class Ringo {
+private:
+	IRenderManager* manager;
+
 public:
-	Image render(SceneInterface scene);
+	Ringo(IRenderManager* manager) : manager(manager) {}
+
+	void render(SceneInterface* scene);
 };
 

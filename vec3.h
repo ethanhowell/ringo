@@ -25,7 +25,7 @@ public:
 		return result;
 	}
 
-	vec3 dot(const vec3& other) const {
+	double dot(const vec3& other) const {
 		return x * other.x + y * other.y + z * other.z;
 	}
 

@@ -1,9 +1,9 @@
 #include <exception>
 #include <iostream>
 
+#include "FileRenderManager.h"
 #include "JsonScene.h"
 #include "Ringo.h"
-#include "SceneInterface.h"
 
 void exit_failure(const char* message) {
     std::cerr << message << std::endl;
@@ -17,10 +17,10 @@ int main(int argc, char* argv[]) {
         exit_failure("Please provide exactly one argument that is a valid path to a scene file.");
  
     try {
-        Ringo ray_tracer = Ringo();
-        SceneInterface scene = JsonScene(argv[1]);
-        Image image = ray_tracer.render(scene);
-        image.write("");
+        FileRenderManager manager = FileRenderManager(500, 500, "test.png");
+        Ringo ray_tracer = Ringo(&manager);
+        JsonScene scene = JsonScene(argv[1]);
+        ray_tracer.render(&scene);
     }
     catch (std::exception& ex) {
         exit_failure(ex.what());
