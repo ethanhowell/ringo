@@ -17,6 +17,8 @@ public:
 		z = other.z;
 	}
 
+	~vec3() {}
+
 	vec3 cross(const vec3& other) const {
 		vec3 result;
 		result.x = y * other.z - z * other.y;

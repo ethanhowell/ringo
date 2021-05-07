@@ -11,13 +11,13 @@ void exit_failure(const char* message) {
 int main(int argc, char* argv[]) {
     // Expects command line arguments of the form 
     // ringo path-to-scene-json
-    if (argc != 2)
-        exit_failure("Please provide exactly one argument that is a valid path to a scene file.");
+    // if (argc != 2)
+    //     exit_failure("Please provide exactly one argument that is a valid path to a scene file.");
  
     try {
         FileRenderManager manager = FileRenderManager(500, 500, "test.png");
         Ringo ray_tracer = Ringo(&manager);
-        Scene scene;
+        Scene scene; // TODO: construct a scene (probably from a SceneConstructor factory of some sort)
         ray_tracer.render(scene);
     }
     catch (std::exception& ex) {

@@ -10,5 +10,6 @@ public:
 
 	const vec3& get_color() const { return color; }
 	virtual const vec3 direction_to_light(const vec3& start) const = 0;
+	virtual ~ILight() {}
 };
 
