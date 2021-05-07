@@ -14,10 +14,10 @@ public:
 		// TODO: construct the image array that will store pixel values, as well as some sort of queue or mutex that prevents parallel access
 	}
 
-	Pixel get_next_pixel() override;
-	void draw_pixel(const Pixel& pixel) override;
+	Pixel* get_next_pixel() override;
+	void draw_pixel(Pixel* pixel) override;
 
-	int get_width() { return width; }
-	int get_height() { return height; }
+	int get_width() override { return width; }
+	int get_height() override { return height; }
 };
 

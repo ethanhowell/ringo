@@ -12,6 +12,6 @@ private:
 public:
 	Ringo(IRenderManager* manager) : manager(manager) {}
 
-	void render(SceneInterface* scene);
+	void render(SceneInterface* scene) const;
 };
 

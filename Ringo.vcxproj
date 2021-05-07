@@ -143,6 +143,7 @@
     <ClCompile Include="FileRenderManager.cpp" />
     <ClCompile Include="JsonScene.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Ray.cpp" />
     <ClCompile Include="Ringo.cpp" />
     <ClCompile Include="Triangle.cpp" />
   </ItemGroup>
@@ -154,6 +155,7 @@
     <ClInclude Include="JsonScene.h" />
     <ClInclude Include="LightInterface.h" />
     <ClInclude Include="Pixel.h" />
+    <ClInclude Include="Ray.h" />
     <ClInclude Include="Ringo.h" />
     <ClInclude Include="SceneInterface.h" />
     <ClInclude Include="Triangle.h" />

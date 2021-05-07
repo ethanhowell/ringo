@@ -41,6 +41,14 @@ public:
 		return vec3(other.x - x, other.y - y, other.z - z);
 	}
 
+	vec3 operator*(double scalar) const {
+		return vec3(scalar * x, scalar * y, scalar * z);
+	}
+
+	vec3 operator/(double scalar) const {
+		return (*this) * (1 / scalar);
+	}
+
 	double norm() const {
 		return sqrt(x*x + y*y + z*z);
 	}
