@@ -6,6 +6,7 @@
 
 
 void Ringo::render(const Scene& scene) const {
+    manager->new_image();
     double window_y = sqrt(2) * tan(M_PI / 180 * scene.get_camera().get_fov());
     double window_x = manager->get_width() / manager->get_height() * window_y;
 
