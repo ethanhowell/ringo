@@ -1,9 +1,8 @@
 #pragma once
 
-#include <vector>
-
 #include "IRenderManager.h"
-#include "SceneInterface.h"
+#include "Scene.h"
+#include <vector>
 
 class Ringo {
 private:
@@ -12,6 +11,6 @@ private:
 public:
 	Ringo(IRenderManager* manager) : manager(manager) {}
 
-	void render(SceneInterface* scene) const;
+	void render(const Scene& scene) const;
 };
 

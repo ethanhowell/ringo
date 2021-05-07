@@ -1,14 +1,14 @@
 #pragma once
 
-#include "LightInterface.h"
+#include "ILight.h"
 
-class DirectionalLight: public LightInterface {
+class DirectionalLight: public ILight {
 private:
 	vec3 direction;
 
 public:
-	DirectionalLight(const vec3& direction, const vec3& color) : LightInterface(color), direction(direction) {}
+	DirectionalLight(const vec3& direction, const vec3& color) : ILight(color), direction(direction) {}
 
-	const vec3 direction_to_light(const vec3& start) { return direction; }
+	const vec3 direction_to_light(const vec3& start) const override { return direction; }
 };
 

@@ -2,7 +2,7 @@
 
 #include <vector>
 
-#include "LightInterface.h"
+#include "ILight.h"
 #include "Triangle.h"
 #include "vec3.h"
 
@@ -20,6 +20,6 @@ public:
 	vec3 at(double time);
 	Intersection closest_intersection(const std::vector<Triangle>& objects);
 	bool intersects_object(const std::vector<Triangle>& objects);
-	vec3 get_color(const std::vector<Triangle*>& objects, const std::vector<LightInterface*>& lights);
+	vec3 get_color(const std::vector<Triangle*>& objects, const std::vector<ILight*>& lights);
 };
 

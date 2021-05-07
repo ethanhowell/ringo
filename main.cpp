@@ -1,8 +1,6 @@
 #include <exception>
-#include <iostream>
-
 #include "FileRenderManager.h"
-#include "JsonScene.h"
+#include <iostream>
 #include "Ringo.h"
 
 void exit_failure(const char* message) {
@@ -19,8 +17,8 @@ int main(int argc, char* argv[]) {
     try {
         FileRenderManager manager = FileRenderManager(500, 500, "test.png");
         Ringo ray_tracer = Ringo(&manager);
-        JsonScene scene = JsonScene(argv[1]);
-        ray_tracer.render(&scene);
+        Scene scene;
+        ray_tracer.render(scene);
     }
     catch (std::exception& ex) {
         exit_failure(ex.what());

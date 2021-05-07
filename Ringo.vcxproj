@@ -141,7 +141,6 @@
   <ItemGroup>
     <ClCompile Include="Camera.cpp" />
     <ClCompile Include="FileRenderManager.cpp" />
-    <ClCompile Include="JsonScene.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Ray.cpp" />
     <ClCompile Include="Ringo.cpp" />
@@ -152,12 +151,11 @@
     <ClInclude Include="DirectionalLight.h" />
     <ClInclude Include="FileRenderManager.h" />
     <ClInclude Include="IRenderManager.h" />
-    <ClInclude Include="JsonScene.h" />
-    <ClInclude Include="LightInterface.h" />
+    <ClInclude Include="ILight.h" />
     <ClInclude Include="Pixel.h" />
     <ClInclude Include="Ray.h" />
     <ClInclude Include="Ringo.h" />
-    <ClInclude Include="SceneInterface.h" />
+    <ClInclude Include="Scene.h" />
     <ClInclude Include="Triangle.h" />
     <ClInclude Include="vec3.h" />
   </ItemGroup>
